@@ -1,0 +1,67 @@
+.container {
+  background-color: beige;
+  height: 100vh;
+  /* 1. 부모클래스에 flex라고 지정 */
+  display: flex;
+  /* 2. 아이템 하나하나 왼쪽에서 오른쪽으로 row, colunm, reverse*/
+  flex-direction: row;
+  /* 3. nowrap -> 기본값, html 크기 작아져도 한줄에 그대로, wrap이면 박스가 줄 밑으로 내려감 */
+  flex-wrap: nowrap;
+  /* 4. flex-direction, flex-wrap을 합친 것 */
+  /* flex-flow: column nowrap; */
+  /* 5. 아이템 덩어리들 배치 왼쪽에서 오른쪽으로, end는 오른쪽에서 왼쪽으로 */
+  /* space-evenly 똑같은 간격, space-between 끝 붙이고 중간에만 간격 */
+  /* 아이템 하나하나 간격, 정렬을 어떻게 할지 */
+  justify-content: space-between;
+  /* 6. 전체 아이템 덩어리들을 어떻게 배치할지 */
+  /* baseline, 아이템들을 수직정렬 */
+  align-items: center;
+  /* 7.아이템들이 많을때 body 기준으로 space-between */
+  /* align-content: space-between; */
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.item1 {
+  background: #ef9a9a;
+}
+
+.item2 {
+  background: #f48fb1;
+}
+
+.item3 {
+  background: #ce93d8;
+}
+
+.item4 {
+  background: #b39ddb;
+}
+
+.item5 {
+  background: #90caf9;
+}
+
+.item6 {
+  background: #a5d6a7;
+}
+
+.item7 {
+  background: #e6ee9c;
+}
+
+.item8 {
+  background: #fff59d;
+}
+
+.item9 {
+  background: #ffcc80;
+}
+
+.item10 {
+  background: #ffab91;
+}
